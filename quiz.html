@@ -11,31 +11,41 @@
 
     <link rel="stylesheet" type="text/css" href="quiz.css">
 
-    <script src="quiz.js"></script>
-
 </head>
 
 <body id="body" class="responsive">
 
-    <center>
-    <h1 id="title1">Welcome to the Math Quiz Game!</h1>
-   
-    <div id="div_login1" class="col-lg-4 col-sm-8 col-xs-11 div_login">
-        <h2 class="text1">Player 1</h2>
-        <h4 class="text2">Username:</h4>
-        <input type="text" id="player1Name" class="form-control" placeholder="Player 1's Name">
-        <br>
-    </div>
-    <div  id="div_login2" class="col-lg-4 col-sm-8 col-xs-11 div_login">
-        <h2 class="text1">Player 2</h2>
-        <h4 class="text2">Username:</h4>
-        <input type="text" id="player2Name" class="form-control" placeholder="Player 2's Name">
-        <br>
-    </div>
+    <h4 id="player1_name"></h4> <span id="player1_score"></span>
     <br>
-    <br>
-    <button id="button_login" onclick="adduser()">Login</button>
-    </center>
-</body>
+    <h4 id="player2_name"></h4> <span id="player2_score"></span>
 
-</html>
+    <div class="container">
+        <center>
+            <h2 style="color: white;">The Math Quiz Game!</h2>
+            <h3 id="player_question"></h3>
+            <h3 id="player_answer"></h3>
+            <div id="output"></div>
+            <br>
+            <br>
+            <div id="numbers" class="btn btn-danger">
+            <label style="font-weight: bold;">Number 1 </label>
+            <br>
+            <input type="text" id="number1" class="form-control" placeholder="Number 1">
+            <br>
+            <label style="font-weight: bold;" >Number 2 </label>
+            <br>
+            <input type="text" id="number2" class="form-control" placeholder="Number 2">
+        </div>
+            <br>
+            <br>
+            <button onclick="send()" style="background-color: #2a4101; color: white;">Send</button>
+
+        </center>
+    </div>
+
+
+
+
+    <script src="quiz.js"></script>
+    </body>
+    </html>
