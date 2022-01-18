@@ -20,7 +20,7 @@ function send() {
 
     question_number = "<h4>" + number1 + " x " + number2 + "</h4>";
     input_box = "<br>Answer: <input type='text' id='input_check_box'>";
-    check_button = "<br><br><button style = 'background-color: #323e03' onclick='check()'>Check</button>";
+    check_button = "<br><br><button id='check_button1' onclick='check()'>Check</button>";
     row = question_number + input_box + check_button;
     document.getElementById("output").innerHTML = row;
     document.getElementById("number1").value = "";
