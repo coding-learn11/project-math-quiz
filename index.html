@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <title>Math Quiz Game</title>
+	<title>Guess The Word</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="quiz.css">
+<link rel="stylesheet" type="text/css" href="game.css">
+
 
 </head>
-
-<body id="body" class="responsive">
-
-    <center>
-    <h1 id="title1">Welcome to the Math Quiz Game!</h1>
-   
-    <div id="div_login1" class="col-lg-4 col-sm-8 col-xs-11 div_login">
-        <h2 class="text1">Player 1</h2>
-        <h4 class="text2">Username:</h4>
-        <input type="text" id="player1Name" class="form-control" placeholder="Player 1's Name">
-        <br>
-    </div>
-    <div  id="div_login2" class="col-lg-4 col-sm-8 col-xs-11 div_login">
-        <h2 class="text1">Player 2</h2>
-        <h4 class="text2">Username:</h4>
-        <input type="text" id="player2Name" class="form-control" placeholder="Player 2's Name">
-        <br>
-    </div>
-    <br>
-    <br>
-    <button id="button_login" onclick="addUser()">Login</button>
-    </center>
-    
-    <script src="main.js"></script>
+<body>
+<center>
+	<h1>Game</h1>
+<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+	<h3>Player 1 Login for the Game</h3>
+	<label>Username:</label>
+	<input type="text" id="player1_name_input" class="form-control" placeholder="Player 1 Name">
+	<br>
+</div>
+<br>
+<br>
+<div class="col-lg-4 col-sm-8 col-xs-11 login_div2">
+	<h3>Player 2 Login for the Game</h3>
+	<label>Username:</label>
+	<input type="text" id="player2_name_input" class="form-control" placeholder="Player 2 Name">
+	<br>
+</div>
+<br>
+<br>
+<button style="width:30%" class="btn btn-primary" onclick="addUser();">Log In</button>
+</center>
+<script src="main.js"></script>
 </body>
-
 </html>
