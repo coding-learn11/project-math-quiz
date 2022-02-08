@@ -46,7 +46,7 @@ function check() {
             update_player2_score = player2_score + 1;
             document.getElementById("player2_score").innerHTML = update_player2_score;
         }
-
+    }
         if (question_turn == "player1")
         {
             question_turn = "player2";
@@ -73,6 +73,5 @@ function check() {
 
         document.getElementById("output").innerHTML = "";
 
-}
 }
 
